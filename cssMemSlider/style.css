@@ -9,8 +9,8 @@ h1{
     text-align: center;
 }
 .my_slider_container{
-    max-width: 60vw;
-    height: 70vh;
+    width: 50vw;
+    height: auto;
     margin: 0 auto;
     border-radius: 5px;
     background-color: rgb(196, 195, 194);
@@ -33,6 +33,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding-top: 10px;
 }
 .slider_bottom{
     width: 100%;
@@ -54,9 +55,9 @@ h1{
     overflow: hidden; 
 }
 p{
-    font-family: Arial;
+    font-family: "Times New Roman";
     color: cornsilk;
-    font-size: 19px;
+    font-size: 22px;
 }
 .paginator{
     width: 30%;
@@ -68,7 +69,7 @@ p{
     width: 15px;
     height: 15px;
     margin-left: 10px;
-    background-color: rgb(111, 95, 250);
+    background-color: rgb(252, 41, 3);
     border-radius: 50%;
     transition: all .3s ease;
     cursor: pointer;
@@ -136,24 +137,21 @@ img{
 }
 
 #rad1:checked ~ .slider_bottom .paginator label:nth-child(1){
-    background:rgb(187, 255, 0);
+    background:rgb(3, 245, 3);
 }
 #rad2:checked ~ .slider_bottom .paginator label:nth-child(2){
-    background:rgb(187, 255, 0);
+    background:rgb(3, 245, 3);
 }
 #rad3:checked ~ .slider_bottom .paginator label:nth-child(3){
-    background:rgb(187, 255, 0);
+    background:rgb(3, 245, 3);
 }
 #rad4:checked ~ .slider_bottom .paginator label:nth-child(4){
-    background:rgb(187, 255, 0);
+    background:rgb(3, 245, 3);
 }
 
 #rad1:checked ~ .slider_bottom .paginator label:nth-child(1):hover{
-    background:cornsilk;
-    
+    background:cornsilk;   
 }
-
-
 label::before{
     content: '';
     display: block;
@@ -171,13 +169,16 @@ label::before{
 @media (max-width:1024px){
     .my_slider_container{
         max-width: 75vw;
-        height: 75vh;
+        /* height: 75vh; */
+    }
+    p{
+        font-size: 18px;
     }
 }
 @media (max-width:768px){
     .my_slider_container{
         max-width: 75vw;
-        height: 75vh;
+        /* height: 75vh; */
     }
     .slider_bottom{
         width: 100%;
@@ -196,6 +197,9 @@ label::before{
         display: flex;
         justify-content: center;
     }
+    p{
+        font-size: 17px;
+    }
 }
 @media (max-width:320px){
     h1{
@@ -203,15 +207,15 @@ label::before{
     }
     .my_slider_container{
         max-width: 95vw;
-        height: 95vh;
+        /* height: 95vh; */
     }
     .paginator{
-        width: 32%;
+        width: 61%;
         height: 23%;
         display: flex;
         justify-content: end;
     }
     p{
-        font-size: 16px;
+        font-size: 12px;
     }
 }
