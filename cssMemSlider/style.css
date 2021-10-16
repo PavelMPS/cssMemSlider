@@ -5,13 +5,41 @@
 /* body{
     
 } */
+header{
+    width: 50%;
+    background: rgb(196, 195, 194);
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.header_info{
+    margin: auto;
+    width: 99%;
+    background: rgb(29, 29, 28);
+    border-top: 2px solid rgb(196, 195, 194);
+    border-bottom: 1px solid rgb(196, 195, 194);
+}
 h1{
     text-align: center;
+    color: rgb(231, 43, 9);
+    text-shadow: 0 0 2px yellow;
+    animation: pulsar 2s infinite;
+}
+@keyframes pulsar{
+    0%{
+        transform: scale(0.9)
+    }
+    50%{
+        transform: scale(1.0);
+    }
+    100%{
+        transform: scale(0.9);
+    }
 }
 .my_slider_container{
     width: 50vw;
     height: auto;
-    margin: 0 auto;
+    margin: auto;
     border-radius: 5px;
     background-color: rgb(196, 195, 194);
     display: flex;
@@ -21,11 +49,12 @@ h1{
 .my_slider_inner{
     width: 99%;
     height: 99%;
-
     background-color: rgb(29, 29, 28);
     display: flex;
     align-items: center;
     justify-content: center;
+    border-top: 3px solid rgb(196, 195, 194);
+    border-bottom: 3px solid rgb(196, 195, 194);
 }
 .slider_wrapper{
     width: 95%;
@@ -56,7 +85,7 @@ h1{
 }
 p{
     font-family: "Times New Roman";
-    color: cornsilk;
+    color: rgb(182, 182, 70);
     font-size: 22px;
 }
 .paginator{
@@ -97,7 +126,6 @@ input[name="rad"]{
     width: 25%;
 }
 .slide1{
-    
     transition: all 1s ease;
     width: 25%;
 }
@@ -166,6 +194,27 @@ label::before{
     border-radius: 50%;
 }
 
+footer{
+    width: 50%;
+    background: rgb(196, 195, 194);
+    margin: 0 auto;
+    border-radius: 5px;
+}
+.footer_info{
+    margin: auto;
+    width: 99%;
+    background: rgb(29, 29, 28);
+    border-top: 2px solid rgb(196, 195, 194);
+    border-bottom: 3px solid rgb(196, 195, 194);
+    display: flex;
+    justify-content: space-around;
+}
+.footer_info p{
+    color: rgb(170, 170, 2);
+}
+a{
+    text-decoration: none;
+}
 
 @media (max-width:1024px){
     .my_slider_container{
@@ -173,7 +222,7 @@ label::before{
         /* height: 75vh; */
     }
     p{
-        font-size: 18px;
+        font-size: 15px;
     }
 }
 @media (max-width:768px){
@@ -199,16 +248,21 @@ label::before{
         justify-content: center;
     }
     p{
-        font-size: 17px;
+        font-size: 14px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    .footer_info p{
+        font-size: 10px;
     }
 }
 @media (max-width:320px){
     h1{
-        font-size: 20px;
+        font-size: 14px;
     }
     .my_slider_container{
         max-width: 95vw;
-        /* height: 95vh; */
     }
     .paginator{
         width: 61%;
@@ -217,6 +271,9 @@ label::before{
         justify-content: end;
     }
     p{
-        font-size: 12px;
+        font-size: 10px;
+    }
+    .footer_info p{
+        font-size: 8px;
     }
 }
