@@ -50,8 +50,8 @@ h1{
 }
 
 .my_slider2{
-    width: 30%;
-    height: 100%;
+    width: 40%;
+    height: auto;
     overflow: hidden; 
 }
 p{
@@ -64,6 +64,7 @@ p{
     height: 10%;
     display: flex;
     justify-content: end;
+    padding-top: 5px;
 }
 .bullet{
     width: 15px;
@@ -97,7 +98,7 @@ input[name="rad"]{
 }
 .slide1{
     
-    transition: all .6s ease;
+    transition: all 1s ease;
     width: 25%;
 }
 .slides1{
