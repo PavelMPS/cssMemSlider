@@ -2,9 +2,9 @@
     margin: 0;
     padding: 0;
 }
-body{
+/* body{
     
-}
+} */
 .my_slider_container{
     max-width: 995px;
     height: 700px;
@@ -27,35 +27,35 @@ body{
 .slider_wrapper{
     width: 95%;
     height: 95%;
-    border: 1px solid green;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
-.my_slider1{
-    width: 100%;
-    height: 70%;
-    border: 1px solid yellow;
-    overflow: hidden;
-    border-radius: 10px;
-}
 .slider_bottom{
     width: 100%;
     height: 25%;
-    border: 1px solid yellow;
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
+.my_slider1{
+    width: 100%;
+    height: 70%;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
 .my_slider2{
     width: 30%;
     height: 100%;
-    border: 1px solid blue;
+    overflow: hidden; 
+}
+p{
+    color: cornsilk;
 }
 .paginator{
     width: 30%;
     height: 10%;
-    border: 1px solid red;
     display: flex;
     justify-content: end;
 }
@@ -71,6 +71,7 @@ body{
 .bullet:hover{
     background-color: cornsilk;
 }
+
 input[name="rad"]{
     display: none;
 }
@@ -80,23 +81,53 @@ input[name="rad"]{
     height: 100%;
     display: flex;
 }
-img{
-    width: 100%;
-    height: 100%;
-}
+
 .slide{
     transition: all .6s ease;
     width: 25%;
 }
-#rad1:checked ~ .s1{
+.slide1{
+    
+    transition: all .6s ease;
+    width: 25%;
+}
+.slides1{
+    width: 400%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+#rad1:checked ~.s1{
     margin-left: 0;
 }
-#rad2:checked ~ .s1{
+#rad2:checked ~.s1{
     margin-left: -25%;
 }
-#rad3:checked ~ .s1{
+#rad3:checked ~.s1{
     margin-left: -50%;
 }
-#rad4:checked ~ .s1{
+#rad4:checked ~.s1{
     margin-left: -75%;
+}
+
+@media (max-width:320px){
+    .my_slider_container{
+        max-width: 320px;
+        height: 320px;
+    }
+    .slider_bottom{
+        width: 100%;
+        height: 25%;
+        display: flex;
+        flex-direction:column-reverse;
+    }
+    .my_slider2{
+        width: 100%;
+        height: 70%;
+        overflow: hidden; 
+    }
 }
