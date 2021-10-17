@@ -2,46 +2,46 @@
     margin: 0;
     padding: 0;
 }
-/* body{
-    
-} */
 header{
     width: 50%;
     background: rgb(196, 195, 194);
     margin: 0 auto;
-    border-radius: 5px;
-    margin-top: 10px;
+    border-radius: 0.25em;
+    margin-top: 0.5em;
 }
 .header_info{
     margin: auto;
     width: 99%;
     background: rgb(29, 29, 28);
-    border-top: 2px solid rgb(196, 195, 194);
-    border-bottom: 1px solid rgb(196, 195, 194);
-    border-radius: 5px 5px 0px 0px;
+    border-top: 0.1em solid rgb(196, 195, 194);
+    border-bottom: 0.1em solid rgb(196, 195, 194);
+    border-radius: 0.25em 0.25em 0 0;
 }
 h1{
     text-align: center;
     color: rgb(231, 43, 9);
-    text-shadow: 0 0 2px yellow;
+    text-shadow: 0 0 0.2em yellow;
     animation: pulsar 2s infinite;
 }
 @keyframes pulsar{
     0%{
-        transform: scale(0.9)
+        transform: scale(0.9);
+        text-shadow: 0.1em 0 0.1em yellow;
     }
     50%{
         transform: scale(1.0);
+        text-shadow: 0.2em 0 0.3em yellow;
     }
     100%{
         transform: scale(0.9);
+        text-shadow: 0.1em 0 0.1em yellow;
     }
 }
 .my_slider_container{
     width: 50vw;
     height: auto;
     margin: auto;
-    border-radius: 5px;
+    border-radius: 0.25em;
     background-color: rgb(196, 195, 194);
     display: flex;
     align-items: center;
@@ -54,8 +54,8 @@ h1{
     display: flex;
     align-items: center;
     justify-content: center;
-    border-top: 3px solid rgb(196, 195, 194);
-    border-bottom: 3px solid rgb(196, 195, 194);
+    border-top: 0.1em solid rgb(196, 195, 194);
+    border-bottom: 0.1em solid rgb(196, 195, 194);
 }
 .slider_wrapper{
     width: 95%;
@@ -63,7 +63,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    padding-top: 10px;
+    padding-top: 0.4em;
 }
 .slider_bottom{
     width: 100%;
@@ -76,9 +76,8 @@ h1{
     width: 100%;
     height: 70%;
     overflow: hidden;
-    border-radius: 10px;
+    border-radius: 0.4em;
 }
-
 .my_slider2{
     width: 40%;
     height: auto;
@@ -87,26 +86,24 @@ h1{
 p{
     font-family: "Times New Roman";
     color: rgb(182, 182, 70);
-    font-size: 22px;
+    font-size: 1.375em;
 }
 .paginator{
     width: 30%;
     height: 10%;
     display: flex;
     justify-content: end;
-    padding-top: 5px;
+    padding-top: 0.3em;
 }
 .bullet{
-    width: 15px;
-    height: 15px;
-    margin-left: 10px;
+    width: 0.9375em;
+    height: 0.9375em;
+    margin-left: 0.8em;
     background-color: rgb(252, 41, 3);
     border-radius: 50%;
     transition: all .3s ease;
     cursor: pointer;
-   
 }
-
 .bullet:hover{
     background-color: cornsilk;
     transform: scale(1.2);
@@ -118,13 +115,11 @@ p{
 input[name="rad"]{
     display: none;
 }
-
 .slides{
     width: 400%;
     height: 100%;
     display: flex;
 }
-
 .slide{
     transition: all .6s ease;
     width: 25%;
@@ -188,29 +183,28 @@ img{
 label::before{
     content: '';
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 2em;
+    height: 2em;
     cursor: pointer;
-    padding-left: 1px;
+    padding-left: 0.0625em;
     position: relative;
-    top: -7px;
-    left: -8px;
+    top: -0.4375em;
+    left: -0.5em;
     border-radius: 50%;
 }
-
 footer{
     width: 50%;
     background: rgb(196, 195, 194);
     margin: 0 auto;
-    border-radius: 5px;
+    border-radius: 0.3125em;
 }
 .footer_info{
     margin: auto;
     width: 99%;
     background: rgb(29, 29, 28);
-    border-top: 2px solid rgb(196, 195, 194);
-    border-bottom: 3px solid rgb(196, 195, 194);
-    border-radius: 0px 0px 5px 5px;
+    border-top: 0.125em solid rgb(196, 195, 194);
+    border-bottom: 0.1875em solid rgb(196, 195, 194);
+    border-radius: 0 0 0.3125em 0.3125em;
     display: flex;
     justify-content: space-around;
 }
@@ -232,7 +226,7 @@ a{
         /* height: 75vh; */
     }
     p{
-        font-size: 15px;
+        font-size: 0.9375em;
     }
 }
 @media (max-width:768px){
@@ -258,18 +252,18 @@ a{
         justify-content: center;
     }
     p{
-        font-size: 14px;
+        font-size: 0.875em;
     }
     h1{
-        font-size: 20px;
+        font-size: 1.25em;
     }
     .footer_info p{
-        font-size: 10px;
+        font-size: 0.625em;
     }
 }
 @media (max-width:320px){
     h1{
-        font-size: 14px;
+        font-size: 0.875em;
     }
     .my_slider_container{
         max-width: 95vw;
@@ -280,10 +274,14 @@ a{
         display: flex;
         justify-content: end;
     }
+    .bullet{
+        width: 0.7em;
+        height: 0.7em;
+    }
     p{
-        font-size: 10px;
+        font-size: 0.625em;
     }
     .footer_info p{
-        font-size: 8px;
+        font-size: 0.5em;
     }
 }
